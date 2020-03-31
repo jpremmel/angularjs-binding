@@ -8,10 +8,10 @@
     <div ng-app> <!--The ng-app directive defines where in our page an Angular application is running-->
       <h1>Data Binding with AngularJS</h1>
       <input type="text" ng-model="message"> <!--ng-model is a directive in AngularJS that binds a variable from an input field to a scope variable-->
-      <p>{{ message }}</p>
-      <p>{{ message + ' ' + message }}</p>
-      <p>You wrote "hello:" {{ message === "hello" }}</p>
-      <p>1 + 2 = {{ 1 + 2 }}</p>
+      <p ng-bind="message"></p>
+      <p ng-bind="message + ' ' + message"></p>
+      <p ng-bind="message === 'hello'"></p>
+      <p ng-bind="1 + 2"></p>
     </div>
   </body>
 </html>
